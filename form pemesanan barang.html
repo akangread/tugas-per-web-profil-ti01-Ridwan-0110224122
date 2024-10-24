@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Rolls Royce</title>
+</head>
+<body>
+    <h1 style="font-size: 50px; text-align: center; background-color:azure ">Rolls Royce Motor Cars</h1>
+    <header style="padding: 10px;">
+        <fieldset>
+        <ul style="list-style: none; margin: 0; padding: 15px; display: flex; justify-content: space-between;">
+            <li style="margin: 0 10px;"><a href="#" style="text-decoration: none; color: white; font-weight: bold;">Home |</a></li>
+            <li style="margin: 0 10px;"><a href="#" style="text-decoration: none; color: white; font-weight: bold;">Generate Link |</a></li>
+            <li style="margin: 0 10px;"><a href="#" style="text-decoration: none; color: white; font-weight: bold;">Transaction History |</a></li>
+            <li style="margin: 0 10px;"><a href="#" style="text-decoration: none; color: white; font-weight: bold;">Policy |</a></li>
+            <li style="margin: 0 10px;"><a href="#" style="text-decoration: none; color: white; font-weight: bold;">Logout |</a></li>
+        </ul>
+        </fieldset>
+    </header>
+    <h2 style="text-align: center;">Form Pemesanan Mobil</h2>
+    <br>
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div class="left">
+            <form method="post" action="hasil.html">
+                <img src="foto rolls royce.png" width="700" height="375">
+        </div>
+        <div class="right">
+            <label for="title here">Title Here :</label>
+            <input type="text" name="title here"
+            id="title here" required autofocus>
+            <br><br>
+            <label for="deskripsi">
+                Deskripsi :
+            </label>
+            <textarea name="deskripsi" id="deskripsi" maxlength="500" cols="50" rows="5">Mobil dengan kenyamaman terbaik di dunia
+            </textarea>
+            <br><br><br>
+            <label for="account number">Account Number :</label>
+            <input type="number" name="account number"
+            id="account number" required>
+            <br><br>
+            <label for="bank">Bank :</label>
+            <input type="text" list="bank">
+            <datalist id="bank">
+                <option>BCA</option>
+                <option>BNI</option>
+                <option>BSI</option>
+                <option>BRI</option>
+                <option>MANDIRI</option>
+            </datalist>
+            <br><br>
+            <label for="account holder">Account Holder :</label>
+            <input type="text" name="account holder"
+            id="account holder" required>
+            <br><br>
+            <label for="transaction">Transaction :</label>
+            <select name="number" id="number">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <br>
+            <p>
+                *if the transaction is for 3 person, choose 3 from the drop-down list
+            </p>
+            <input type="checkbox" name="mobile phone" id="mobile phone">Send to mobil phone
+            <br>
+            <input type="checkbox" name="email" id="email">Send to Email
+            <br><br><br>
+            <label for="send to mobile phone">Send to mobil phone :</label>
+            <input type="number" name="send to mobile phone"
+            id="send to mobile phone" required>
+            <br><br>
+            <label for="email">Send to Email :</label>
+            <input type="email" name="email"
+            id="Email" required>
+            <br><br><br>
+            <input type="submit" value="Generate Nabr link" style="background-color: green;">
+        </form>
+        </div>
+
+    </div>
+</body>
+</html>

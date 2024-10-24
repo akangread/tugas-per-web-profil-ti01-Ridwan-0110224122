@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pemesanan Pizza Uyey</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Form Pizza Uyey</h1>
+        <form method="post" action="https://blackgoosebistro.com/pizza.php">
+        <fieldset style="border: 1px solid; background-color: aliceblue;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias soluta ullam laudantium, tenetur quibusdam labore necessitatibus rem aut, consequatur quos voluptatum perferendis voluptatibus perspiciatis vitae quia possimus! Accusantium, nesciunt.</p>
+        <p>Informasi Kamu</p>
+            <p>
+                <label for="customername">Name:</label>
+                <input type="text" name="customername"
+                id="customername" required autofocus>
+            </p>
+            <p>
+                <label for="address">Alamat:</label>
+                <input type="text" name="address"
+                id="address" required>
+            </p>
+            <p>
+                <label for="telephone">No Telepon:</label>
+                <input type="number" name="telephone"
+                id="telephone" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email"
+                id="Email" required>
+            </p>
+        </fieldset>
+        <fieldset style="border: 1px solid; background-color: aliceblue;">
+            <br>
+            <label for="instructions">Deskripsi pemesanan</label>
+            <br><br>
+            <textarea name="instructions" 
+            id="instructions" placeholder="tidak boleh lebih dari 400 karakter"
+            maxlength="400" cols="30" rows="5"></textarea>
+
+        <h4>Design Pizza kamu</h4>
+        <P>
+            <label>Spek Pizza :</label>
+        </P>
+        <p>
+            <label>Lapisan (pilih satu)</label>
+            <br>
+            <input type="radio" name="crust" id="crust1" value="original" required>
+            <label for="crust1">Original</label>
+
+            <br>
+            <input type="radio" name="crust" id="crust2" value="roti pipih" required>
+            <label for="crust2">Roti pipih</label>
+            <br>
+            <input type="radio" name="crust" id="crust3" value="bebas gluten" required>
+            <label for="crust3">Bebas gluten</label>
+        </p>
+        <p>
+            <label>Topping (bisa lebih dari saru)</label>
+            <br>
+            <input type="checkbox" name="toppings[]" id="toppings1" value="sosis">
+            <label for="toppings1">Sosis</label>
+
+            <br>
+            <input type="checkbox" name="toppings[]" id="toppings2" value="saos pedas">
+            <label for="toppings2">Saos pedas</label>
+
+            <br>
+            <input type="checkbox" name="toppings[]" id="toppings3" value="saos tomat">
+            <label for="toppings3">Saos tomat</label>
+
+            <br>
+            <input type="checkbox" name="toppings[]" id="toppings4" value="mayones">
+            <label for="toppings4">Mayones</label>
+
+            <br>
+            <input type="checkbox" name="toppings[]" id="toppings5" value="keju mozarella">
+            <label for="toppings5">Keju mozarella</label>
+        </p>
+        <p>
+            <label for="number">Jumlah pizza</label>
+            <input type="text" list="number">
+            <datalist id="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </datalist>
+        </p>
+        </fieldset>
+        <div>
+            <Input type="submit" value="Pesan sekarang">
+            <input type="reset" value="reset">
+        </div>
+        </form>
+    </body>
+</html>
